@@ -106,11 +106,7 @@ För varje iteration i loopen får vi ut vad propertien heter. Denna property ka
 ## En funktion som skriver ut objektet
 
 1. Skapa en funktion `printContent` som tar ditt (ett) objekt som argument. 
-2. Funktionen ska sedan loopa igenom alla värden i objektet och returnera en sträng på liknande sätt: `The album Blue by Joni Mitchell was release in 1971`.
-
-
-
-
+2. Funktionen ska sedan skriva ut alla värden i objektet och returnera en sträng på liknande sätt: `The album Blue by Joni Mitchell was release in 1971`.
 
 
 
