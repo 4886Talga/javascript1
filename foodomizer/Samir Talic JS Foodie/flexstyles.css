@@ -1,0 +1,331 @@
+/*---------------------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------------------*/	
+* {
+	margin: 0;
+	padding: 0;
+	//border: 1px solid #fff;
+}
+html{
+	background-color.: #fff;
+	color: #d5d5d5;
+	font-family: 'Lato', "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+.matcontainer{
+	color: #fff;
+	margin-top: 20px;
+}
+.flex-form {
+	min-height: 500px;
+}
+/* ------ HEADINGS ----*/
+h1{
+	margin: 0;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	margin-bottom: 20px;
+	font-size: 90%;
+}
+/* ------ TODO SETUP ----*/
+.todo-heading {
+	color: #555;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	font-size: 90%;
+}
+.flex-list {
+	color: #555;
+}
+.ul-list-container-right {
+    border-left: 1px solid #555;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.ion-ios-trash-outline {
+	margin-left: 10px;
+}
+.li-style-left {
+	border-right-color: #555;
+	
+}
+.li-style-right {
+	border-left-color: #555;
+}
+.ion-android-more-vertical {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* ------ BUTTONS ----*/
+.btn:link, 
+.btn:visited {
+	display: inline-block;
+	padding: 5px 30px 15px 30px;
+	margin-bottom: 0px;
+	font-weight: 400;
+	text-decoration: none;
+	border-radius: 200px;
+	font-size: 60%;
+	width: 50px;
+	height: 20px;
+	transition: background-color 0,2s, border 0,2s;
+	
+}
+.btn-full:link,
+.btn-full:visited {
+	//background-color: #e67e22;
+	//border: 1px solid #e67e22;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.btn:hover,
+.btn:active {
+	//background-color: #cf6d17;
+	margin-bottom: 10px;
+}
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #cf6d17;
+	margin-bottom: 10px;
+}
+.todoSubmit {
+	font-family: 'Lato', "Arial", sans-serif;
+	font-weight: 400;
+}
+/* ------ HEADER ----*/
+header{	
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(backgroundimagefoodomizer.jpg);
+	background-position: center;
+	background-size: cover;
+	//height: 100vh;
+	height: auto;
+}
+
+
+.logo {
+	height: 100px;
+	width: auto;
+	margin-top: 0px;
+}
+/* ------ ICONS ----*/
+.icon-big{
+	font-size:300%;
+	display: block;
+	color: #555;
+}
+.todolista {
+	font-size:15px; 
+}
+.meaticon {
+	width: 30px;
+	height: 30px;
+	
+}
+img {
+	margin: auto;
+    width: 100%;
+	height: auto;
+    max-width: 200px;
+    max-height:100%;
+	border: none;
+			
+}
+
+#matcontainer, #foodicon {
+	display: inline-block;
+}
+#foodicon {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+/* ------ FLEX SETUP ----*/
+.flex-container {
+	display:flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+.flex-description2{
+	display: none;
+}
+.flex-form {
+	display: flex;
+	flex-flow:row wrap;
+	align-content: center;
+	justify-content: flex-start;
+	text-align: center;
+}
+
+.showingredients {
+	display:block;
+}
+
+/* ------ Mobile first ----*/
+
+.flex-container > * {
+	flex: 1 100%;
+	padding: 10px;
+	
+}
+.flex-form > * {
+	flex: 1 100%;
+	padding: 10px;
+}
+.flex-btn {
+	flex: 1;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* ------ BUTTONS ----*/
+.flex-list {
+	flex: 1;
+}
+.btn:link, 
+.btn:visited {
+	display: inline-block;
+	padding: 15px 30px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	font-size: 90%;
+	width: 150px;
+	height: 20px;
+	transition: background-color 0,2s, border 0,2s;
+	
+}
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	border: 1px solid #e67e22;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.btn:hover,
+.btn:active {
+	background-color: #cf6d17;
+	margin-bottom: 10px;
+}
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #cf6d17;
+	margin-bottom: 10px;
+}
+.flex-btn { 
+	  flex: 1 auto;
+	}
+	.flex-description, .flex-img {
+		flex: 1;
+	}
+	.logo {
+		height: 150px;
+		width: auto;
+		margin-top: 0px;
+	}
+	h1{
+		margin: 0;
+		color: #fff;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: 4px;
+		margin-bottom: 10px;
+		font-size: 200%;
+	}
+	.todo-heading {
+		color: #555;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: 4px;
+		margin-bottom: 10px;
+		font-size: 200%;
+	}
+}
+@media all and (min-width: 800px) {
+  .flex-description, .flex-img, .flex-description2, .showingredients {
+		flex: 1;
+	}
+	.flex-list {
+	flex: 1;
+}
+	/* ------ BUTTONS ----*/
+.btn:link, 
+.btn:visited {
+	display: inline-block;
+	padding: 15px 30px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	font-size: 90%;
+	width: 150px;
+	height: 20px;
+	transition: background-color 0,2s, border 0,2s;
+	
+}
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	border: 1px solid #e67e22;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.btn:hover,
+.btn:active {
+	background-color: #cf6d17;
+	margin-bottom: 10px;
+}
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid #cf6d17;
+	margin-bottom: 10px;
+}
+	#btn1 {
+		float: right;
+	}
+	#btn3 {
+		float: left;
+	}
+	img {
+		margin: auto;
+		width: 100%;
+		height: auto;
+		max-width: 300px;
+		max-height:100%
+	}
+	.logo {
+		height: 200px;
+		width: auto;
+		margin-top: 0px;
+	}
+	h1{
+		margin: 0;
+		color: #fff;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: 4px;
+		margin-bottom: 20px;
+		font-size: 200%;
+	}
+	.todo-heading {
+		color: #555;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		word-spacing: 4px;
+		margin-bottom: 10px;
+		font-size: 200%;
+	}
+}

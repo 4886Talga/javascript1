@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Foodomizer</title>
+	<link rel="stylesheet" href="flexstyles.css">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	</head>
+<body>
+	
+	<header class="flex-container">
+		<nav class="flex-nav">
+			<img src="foodomizerlogo.png" alt="Foodomizer logo" class="logo">
+		</nav>
+		
+	   <div class="flex-h1">
+		   <h1>Vad blir det för mat?</h1>
+		</div>
+	    <div class="flex-btn flex-btn1">
+	    	<a id="btn1" class="btn btn-full" href="#" onclick=YourDish("false")>Överraska mig!</a>
+	    </div>
+	    <div class="flex-btn flex-btn2">
+	    	<a id="btn2" class="btn btn-full" href="#" onclick=YourDish("true")>Bara vegetariskt!</a>
+	    </div>
+	    <div class="flex-btn flex-btn3">
+	    	<a id="btn3" class="btn btn-full" href="#" onclick=AddNewRecepie()>Lägg till recept.</a>
+	    </div>
+	    <div class="flex-h2"><h2 id="matcontainer"></h2><img id="foodicon" class="meaticon" src="emptyimage.png"/></div>
+		<div class="flex-description">
+		 	<p id="recepie-description"></p>
+		</div>
+		<div class="flex-img"><img id="img-container" src="emptyimage.png"/></div>
+		<div id="description2" class="flex-description2">
+			<p id="ingredients"></p><i class="ion-ios-compose-outline icon-big"><span class="todolista">lägg i todo lista</span></i>
+		</div>
+		<div class="flex-description3">
+			<p id="howtomake"></p>
+		</div>
+	 </header>
+	 <!--<section id="todo-form" class="flex-form">
+	 	<div class="flex-h1">
+		   <h1 class="todo-heading">Att göra lista</h1>
+		</div>
+	 	<div id="form-container">
+			<form>
+				<input id="todoitem" type="text" size="40" name="todo" placeholder="Skriv vad vill du göra.">
+				<input type="submit" onclick="addInputToList()" value="Lägg till" class="todoSubmit">
+			</form>
+	 	</div>
+	 	<div id="list-container-left" class="flex-list">
+	 		<ul id="list-left" class="ul-list-container-left">
+	 			<li class="li-style-left">ccccc<i class="ion-ios-trash-outline"></i>
+				<i class="ion-android-more-vertical"></i>
+				<i class="ion-arrow-right-c"></i></li>
+				
+				
+	 		</ul>
+	 	</div>
+	 	<div id="list-container-right" class="flex-list">
+	 		<ul id="list-right" class="ul-list-container-right">
+	 			<li class="li-style-right">cccccc</li>
+	 			<i class="ion-ios-trash-outline"></i>
+	 		</ul>
+	 	</div>
+	 </section>-->
+	 
+	  <script src="foodomizer.js"></script>
+	  <script src="todolist.js"></script>
+</body>
+</html>
+
